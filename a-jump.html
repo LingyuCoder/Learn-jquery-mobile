@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <title>Your Title</title>
+    <link rel="stylesheet" href="http://code.jquery.com/mobile/1.0/jquery.mobile-1.0.min.css" />
+    <script src="http://code.jquery.com/jquery-1.6.4.min.js"></script>
+    <script type="text/javascript" src="http://code.jquery.com/mobile/1.0/jquery.mobile-1.0.min.js">
+    </script>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no"> </head>
+
+<body>
+    <div data-role="page" id="page1">
+        <div data-role="header">
+            <h1>第一页</h1>
+        </div>
+        <div data-role="content">
+            <p>这是第一页的内容</p>
+            <p>点此跳转到<a href="#page2">第二页</a>.</p>
+        </div>
+        <div data-role="footer">
+            <h4>lingyu.wang</h4>
+        </div>
+    </div>
+    <div data-role="page" id="page2" data-title="这是第二页的标题">
+        <div data-role="header">
+            <h1>第二页</h1>
+        </div>
+        <div data-role="content">
+            <p>这是第二页的内容</p>
+            <p>点此跳转到<a href="a-jump-ajax.html" data-prefetch>第三页</a>，第三页由Ajax加载，并通过data-prefetch预加载</p>
+            <p>可以添加data-ajax=false强制跳转到绝对路径，<a href="a-jump-ajax.html" data-ajax="false">点我</a>
+            </p>
+            <p>通过data-rel=external定义绝对外部链接，<a href="http://baidu.com" data-rel="external">点我</a>
+            </p>
+            <p>通过target=_blank也可以定义绝对外部链接，<a href="http://baidu.com" target="_blank">点我</a>
+            </p>
+        </div>
+        <div data-role="footer">
+            <h4>lingyu.wang</h4>
+        </div>
+    </div>
+</body>
+
+</html>

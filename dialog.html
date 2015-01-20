@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <title>Your Title</title>
+    <link rel="stylesheet" href="http://code.jquery.com/mobile/1.0/jquery.mobile-1.0.min.css" />
+    <script src="http://code.jquery.com/jquery-1.6.4.min.js"></script>
+    <script type="text/javascript" src="http://code.jquery.com/mobile/1.0/jquery.mobile-1.0.min.js">
+    </script>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no"> </head>
+
+<body>
+    <div data-role="page" id="page1">
+        <div data-role="header">
+            <h1>这是Header</h1>
+        </div>
+        <div data-role="content">
+            <p>这是内容</p>
+            <p>打开<a href="#dialog1" data-rel="dialog">文档中的对话框</a>或者<a href="dialog-ajax.html" data-rel="dialog">ajax加载的对话框</a></p>
+            <p>对话框也可以通过data-transition添加转场动画：<a href="#dialog1" data-rel="dialog" data-transition="flip">翻转打开</a></p>
+            <p>打开带关闭按钮的对话框：<a href="#dialog2" data-rel="dialog">打开</a></p>
+        </div>
+        <div data-role="footer">
+            <h4>这是Footer</h4>
+        </div>
+    </div>
+    <div data-role="dialog" id="dialog1">
+        <div data-role="header">
+            <h1>对话框1</h1>
+        </div>
+        <div data-role="content">
+            <p>对话框1的内容</p>
+        </div>
+        <div data-role="footer">
+            <h4>lingyu.wang</h4>
+        </div>
+    </div>
+    <div data-role="dialog" id="dialog2">
+        <div data-role="header">
+            <h1>带关闭按钮的对话框</h1>
+        </div>
+        <div data-role="content">
+            <p>关闭按钮应当是链向原页面的链接</p>
+            <p>
+                <a href="#page1" data-role="button">关闭</a>
+            </p>
+        </div>
+        <div data-role="footer">
+            <h4>lingyu.wang</h4>
+        </div>
+    </div>
+</body>
+
+</html>

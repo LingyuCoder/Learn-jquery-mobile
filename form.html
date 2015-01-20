@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <title>Your Title</title>
+    <link rel="stylesheet" href="http://code.jquery.com/mobile/1.0/jquery.mobile-1.0.min.css" />
+    <script src="http://code.jquery.com/jquery-1.6.4.min.js"></script>
+    <script type="text/javascript" src="http://code.jquery.com/mobile/1.0/jquery.mobile-1.0.min.js">
+    </script>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no"> </head>
+
+<body>
+    <div data-role="page">
+        <div data-role="header">
+            <h1>This is the header</h1>
+        </div>
+        <div data-role="content">
+            <form action="some.json" method="get" data-transition="pop">
+                <div data-role="fieldcontain">
+                    <label for="company">Company Name:</label>
+                    <input type="text" id="company" name="company">
+                </div>
+                <div data-role="fieldcontain">
+                    <label for="hide" class="ui-hidden-accessible">文本:</label>
+                    <input type="text" id="hide" placeholder="hide" name="hide">
+                </div>
+                <div data-role="fieldcontain">
+                    <label for="text">文本:</label>
+                    <input type="text" id="text" placeholder="text" name="text" required>
+                </div>
+                <div data-role="fieldcontain">
+                    <label for="password">密码:</label>
+                    <input type="password" id="password" placeholder="password" name="password">
+                </div>
+                <div data-role="fieldcontain">
+                    <label for="email">email:</label>
+                    <input type="email" id="email" placeholder="email" name="email">
+                </div>
+                <div data-role="fieldcontain">
+                    <label for="tel">tel:</label>
+                    <input type="tel" id="tel" placeholder="tel" name="tel">
+                </div>
+                <div data-role="fieldcontain">
+                    <label for="url">url:</label>
+                    <input type="url" id="url" placeholder="url" name="url">
+                </div>
+                <div data-role="fieldcontain">
+                    <label for="search">search:</label>
+                    <input type="search" id="search" placeholder="search" name="search">
+                </div>
+                <div data-role="fieldcontain">
+                    <label for="number">number:</label>
+                    <input type="number" id="number" placeholder="number" name="number" min="20" max="40">
+                </div>
+                <div data-role="fieldcontain">
+                    <label for="textarea">textarea:</label>
+                    <textarea name="textarea" id="textarea"></textarea>
+                </div>
+                <div data-role="fieldcontain">
+                    <label for="date">date:</label>
+                    <input type="date" id="date" placeholder="date" name="date">
+                </div>
+                <div data-role="fieldcontain">
+                    <label for="datetime">datetime:</label>
+                    <input type="datetime" id="datetime" placeholder="datetime" name="datetime">
+                </div>
+                <div data-role="fieldcontain">
+                    <label for="time">time:</label>
+                    <input type="time" id="time" placeholder="time" name="time">
+                </div>
+                <div data-role="fieldcontain">
+                    <label for="datetime-local">datetime-local:</label>
+                    <input type="datetime-local" id="datetime-local" placeholder="datetime-local" name="datetime-local">
+                </div>
+                <div data-role="fieldcontain">
+                    <label for="month">month:</label>
+                    <input type="month" id="month" placeholder="month" name="month">
+                </div>
+                <div data-role="fieldcontain">
+                    <label for="week">week:</label>
+                    <input type="week" id="week" placeholder="week" name="week">
+                </div>
+                <div data-role="fieldcontain">
+                    <label for="range">range:</label>
+                    <input type="range" id="range" placeholder="range" name="range" min="20" max="40" step="2" value="22">
+                </div>
+                <div data-role="fieldcontain">
+                    <label for="slider">slider:</label>
+                    <select name="slider" id="slider" data-role="slider">
+                        <option value="no">No</option>
+                        <option value="yes">Yes</option>
+                    </select>
+                </div>
+                <div data-role="fieldcontain">
+                    <label for="color">color:</label>
+                    <input type="color" id="color" placeholder="color" name="color">
+                </div>
+                <div data-role="fieldcontain">
+                    <label for="select">select:</label>
+                    <select name="select" id="select">
+                        <option value="html">HTML</option>
+                        <option value="css">CSS</option>
+                        <option value="javascript">JavaScript</option>
+                        <option value="node">Node.js</option>
+                    </select>
+                </div>
+                <div data-role="fieldcontain">
+                    <label for="multi-select">multi-select:</label>
+                    <select name="multi-select" id="multi-select" multiple data-native-menu="false">
+                        <option value="html">HTML</option>
+                        <option value="css">CSS</option>
+                        <option value="javascript">JavaScript</option>
+                        <option value="node">Node.js</option>
+                    </select>
+                </div>
+                <div data-role="controlgroup" data-type="horizontal">
+                    <legend>This week: </legend>
+                    <label for="weekday">Week day</label>
+                    <select name="weekday" id="weekday" data-native-menu="false">
+                        <option value="0" data-placeholder="true">Choose day</option>
+                        <option value="1">Mon</option>
+                        <option value="2">Tue</option>
+                        <option value="3" disabled>Wed</option>
+                        <option value="4">Thu</option>
+                        <option value="5">Fri</option>
+                    </select>
+                    <label for="daytime">Daytime</label>
+                    <select name="daytime" id="daytime" data-native-menu="false">
+                        <option value="0" data-placeholder="true">Choose time</option>
+                        <option value="1">Morning</option>
+                        <option value="2">Midday</option>
+                        <option value="3">Afternoon</option>
+                    </select>
+                </div>
+                <div data-role="controlgroup">
+                    <legend>Menu type</legend>
+                    <label for="radio1">Native menu 1</label>
+                    <input type="radio" id="radio1" name="menuType" value="1">
+                    <label for="radio2">Native menu 2</label>
+                    <input type="radio" id="radio2" name="menuType" value="2">
+                    <label for="radio3">Native menu 3</label>
+                    <input type="radio" id="radio3" name="menuType" value="3">
+                    <label for="radio4">Native menu 4</label>
+                    <input type="radio" id="radio4" name="menuType" value="4">
+                </div>
+                <div data-role="controlgroup" data-type="horizontal">
+                    <legend>Menu type</legend>
+                    <label for="radio-hor-1">menu 1</label>
+                    <input type="radio" id="radio-hor-1" name="menuType-hor" value="1">
+                    <label for="radio-hor-2">menu 2</label>
+                    <input type="radio" id="radio-hor-2" name="menuType-hor" value="2">
+                    <label for="radio-hor-3">menu 3</label>
+                    <input type="radio" id="radio-hor-3" name="menuType-hor" value="3">
+                    <label for="radio-hor-4">menu 4</label>
+                    <input type="radio" id="radio-hor-4" name="menuType-hor" value="4">
+                </div>
+                <div data-role="controlgroup" data-type="horizontal">
+                    <legend>Menu type</legend>
+                    <label for="opt-1">menu 1</label>
+                    <input type="checkbox" id="opt-1" name="opt" value="1">
+                    <label for="opt-2">menu 2</label>
+                    <input type="checkbox" id="opt-2" name="opt" value="2">
+                    <label for="opt-3">menu 3</label>
+                    <input type="checkbox" id="opt-3" name="opt" value="3">
+                    <label for="opt-4">menu 4</label>
+                    <input type="checkbox" id="opt-4" name="opt" value="4">
+                </div>
+            </form>
+        </div>
+        <div data-role="footer">
+            <h4>This is the footer</h4>
+        </div>
+    </div>
+</body>
+
+</html>

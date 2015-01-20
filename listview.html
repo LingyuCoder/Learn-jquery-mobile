@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <title>Your Title</title>
+    <link rel="stylesheet" href="http://code.jquery.com/mobile/1.0/jquery.mobile-1.0.min.css" />
+    <script src="http://code.jquery.com/jquery-1.6.4.min.js"></script>
+    <script type="text/javascript" src="http://code.jquery.com/mobile/1.0/jquery.mobile-1.0.min.js">
+    </script>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no"> </head>
+
+<body>
+    <div data-role="page">
+        <div data-role="header">
+            <h1>This is the header</h1>
+        </div>
+        <div data-role="content">
+            <p>This is the main content of the page</p>
+            <ol data-role="listview">
+                <li data-role="list-divider">分割行</li>
+                <li><a href="http://baidu.com">百度</a><a href="http://lingyu.wang"></a></li>
+                <li><a href="http://google.com">谷歌</a><a href="http://lingyu.wang"></a></li>
+                <li><a href="http://sougou.com">搜狗</a><a href="http://lingyu.wang"></a></li>
+            </ol>
+            <br>
+            <br>
+            <ul data-role="listview" data-inset="true" data-filter="true">
+                <li data-role="list-divider"><h2>交互行</h2></li>
+                <li data-icon="false"><a href="http://baidu.com">百度<span class="ui-li-aside">baidu</span></a></li>
+                <li data-icon="info"><a href="http://google.com">谷歌<span class="ui-li-aside">google</span></a></li>
+                <li data-icon="gear"><a href="http://sougou.com">搜狗<span class="ui-li-aside">sougou</span></a></li>
+                <li><img src="http://read.lingyu.wang/gitbook/images/favicon.ico" width="80" height="80"/>博客</li>
+                <li data-role="list-divider"><h2>嵌套列表</h2></li>
+                <li>
+                    <h3>CSS</h3>
+                    <p>This is desc of css</p>
+                    <ul data-role="listview">
+                        <li>Less</li>
+                        <li>Stylus</li>
+                        <li>Sass</li>
+                    </ul>
+                </li>
+                <li>
+                    <h3>HTML</h3>
+                    <p>This is desc of HTML</p>
+                    <span class="ui-li-count">80</span>
+                    <ul data-role="listview">
+                        <li>Jade</li>
+                        <li>Jucier</li>
+                        <li>Handbar</li>
+                    </ul>
+                </li>
+                <li>
+                    <h3>JavaScript</h3>
+                    <p>This is desc of JavaScript</p>
+                    <ul data-role="listview">
+                        <li>jQuery</li>
+                        <li>Angular</li>
+                        <li>Polymer</li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+        <div data-role="footer">
+            <h4>This is the footer</h4>
+        </div>
+    </div>
+</body>
+
+</html>
